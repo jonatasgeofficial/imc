@@ -3,6 +3,10 @@ window.onload = function () {
 
 	document.getElementById('form')
 		.addEventListener('submit', calcImc);
+
+	anime();
+	
+	document.getElementById('altura').focus();
 }
 
 var config = {
@@ -72,4 +76,9 @@ function calcImc(event) {
 	resultado.className = className;
 	document.getElementById('descricao').innerText = description;
 	document.getElementById('openReveal').click();
+}
+
+function anime() {
+	document.getElementById('background').className += ' active';
+	document.getElementById('card').className += ' active';
 }
