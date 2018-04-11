@@ -1,0 +1,63 @@
+* {
+	box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+body {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+#background {
+  background: url(../img/background.jpg) center center no-repeat #f0f0f0;
+  background-size: cover;
+  filter: blur(3px) brightness(0.87);
+  height: 100%;
+  position: fixed;
+  width: 100%;
+  /*z-index: 0;*/
+}
+
+.card {
+  max-width: 400px;
+  width: 90%;
+}
+
+.card-content {
+  padding: 15px;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.input-field {
+	padding-bottom: 10px!important;
+}
+
+.input-field input, 
+.input-field .select-wrapper {
+	margin-bottom: 0 !important;
+
+}
+
+.card-reveal h4 {
+  font-weight: 300;
+  margin-bottom: 0;
+}
+
+.card-reveal h2 {
+  font-weight: 900;
+  margin-top: 0;
+}
+
+.font-size-12px {
+  font-size: 12px;
+}

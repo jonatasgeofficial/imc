@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<title>Cacluladora de IMC</title>
+
+	<!--Let browser know website is optimized for mobile-->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta charset="utf-8" />
+
+	<!--Import Google Icon Font-->
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<!--Import materialize.css-->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+	<!-- Custom CSS -->
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+	<div id="background"></div>
+
+	<div class="card">
+		<div class="card-content">
+			<h5>
+				Cacluladora de IMC
+			</h5>
+
+			<br>
+
+			<form id="form">
+				<div class="input-field">
+					<input id="altura" type="text" required />
+					<label for="altura">Altura</label>
+				</div>
+				<div class="input-field">
+					<input id="peso" type="text" required />
+					<label for="peso">Peso</label>
+				</div>
+
+				<br />
+
+				<div class="center">
+					<button class="btn" type="submit">Resultado</button>
+				</div>
+			</form>
+		</div>
+
+		<div class="card-reveal">
+			<div>
+				<div class="card-title">
+					&nbsp;
+					<input id="openReveal" class="activator" type="button" hidden />
+					<i title="Fechar resultado" class="material-icons right">close</i>
+				</div>
+
+				<div class="center">
+					<h4>Seu IMC</h4>
+					<h2 id="result">
+						<span id="resultado"></span>
+						<b class="black-text font-size-12px">kg/m2</b>
+					</h2>
+					<span id="descricao"></span>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- JS Vendor -->
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+	<!-- Custom JS -->
+	<script type="text/javascript" src="js/script.js"></script>
+</body>
+
+</html>
